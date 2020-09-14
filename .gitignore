@@ -1,1 +1,5 @@
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendors
 node_modules
