@@ -1,0 +1,109 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@charset "utf-8";
+
+$base-font-family: Helvetica, Arial, sans-serif;
+$base-font-size:   16px;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$spacing-unit:     30px;
+
+$text-color:       #111;
+$background-color: #fdfdfd;
+$brand-color:      #2a7ae2;
+
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+$on-palm:          600px;
+$on-laptop:        800px;
+
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+@import "mixins";
+@import "basejekyll";
+@import "variables";
+
+//Navigation Bar
+.ull {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:darkmagenta ;
+    font-size: 20px;
+}
+
+.lii {
+    float: left;
+}
+
+.lii a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.lii a:hover:not(.active) {
+    background-color: purple;
+}
+
+.active {
+    background-color: rgb(107, 1, 107);
+}
+
+//Contenido
+.contenedor{
+    width:100%;
+    display:flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.contenido{
+    width:20%;
+    float:left;
+    margin: 10px;
+    border: 4px solid purple;
+}
+
+.img{
+    display:block;
+    margin:auto;
+}
+.subtitulo{
+    color: black;
+    text-shadow: black 2px 2px 4px;
+    font-weight: normal;
+    font-size: 35px;
+    font-family: $base-font-family;
+    text-transform: uppercase;
+    text-align: center;
+    }
+
+.texto{
+    font-weight: normal;
+    font-size: 20px;
+    margin: auto;
+    font-family: $base-font-family;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+@for $i from 1 through 3{
+    .#{subcontainer}#{$i}{
+        @include contentdiv
+    }
+}
+

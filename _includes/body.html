@@ -1,0 +1,14 @@
+<header>
+    <div>      
+      <nav class="navbar">
+        <ul class="ull">
+          {% for page in site.pages %}
+            {% if page.title %}
+            <li class="lii"><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+            {% endif %}
+          {% endfor %}
+          <li class="lii" style="float:right"><a class="active" href="{{ site.baseurl }}/">{{ site.title }}</a> </li>
+        </ul>        
+      </nav>  
+    </div>  
+</header>
