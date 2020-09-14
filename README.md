@@ -53,3 +53,7 @@ Con el objetivo de que Gulp se encargue de ejecutar algunas tareas de Jekyll. Si
 **Serve:** Lanzar el servidor
 
 **Default:** Se ejecutan en orden: Construcción del sitio, compilación de archivos Scss y por último lanzar el servidor
+
+## Despliegue Netfly
+
+https://elastic-hugle-6284f9.netlify.app/
