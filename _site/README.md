@@ -53,3 +53,15 @@ Con el objetivo de que Gulp se encargue de ejecutar algunas tareas de Jekyll. Si
 **Serve:** Lanzar el servidor
 
 **Default:** Se ejecutan en orden: Construcción del sitio, compilación de archivos Scss y por último lanzar el servidor
+
+## TravisCI
+
+[![Build Status](https://travis-ci.com/ULL-MII-SYTWS-1920/p8-t3-jekyll-netlify-Felipe5Valencia.svg?branch=master)](https://travis-ci.com/ULL-MII-SYTWS-1920/p8-t3-jekyll-netlify-Felipe5Valencia)
+
+![travisci](img/travisci.png)
+
+## Despliegue Netfly
+
+https://elastic-hugle-6284f9.netlify.app/
+
+## Despliegue en GitHub Pages
