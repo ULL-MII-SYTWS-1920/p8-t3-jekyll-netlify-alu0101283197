@@ -29,5 +29,5 @@ gulp.task('serve', () => {
   });
 });
 
-//gulp.task('default', gulp.series(['build:jekyll','sass','serve']));
+gulp.task('default', gulp.series(['sass']));
 
